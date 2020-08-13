@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PomodoroToDo
 //
-//  Created by Brian Alldred on 06/08/2020.
+//  Created by Brian Alldred on 13/08/2020.
 //  Copyright © 2020 Brian Alldred. All rights reserved.
 //
 
@@ -35,14 +35,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
-    lazy var persistentContainer: NSPersistentContainer = {
+    lazy var persistentContainer: NSPersistentCloudKitContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "PomodoroToDo")
+        let container = NSPersistentCloudKitContainer(name: "PomodoroToDo")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
