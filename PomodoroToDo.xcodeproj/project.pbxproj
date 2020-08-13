@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		B803DCDB24E5569500192396 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DCDA24E5569500192396 /* AppDelegate.swift */; };
 		B803DCDD24E5569500192396 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DCDC24E5569500192396 /* SceneDelegate.swift */; };
-		B803DCDF24E5569500192396 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DCDE24E5569500192396 /* ViewController.swift */; };
+		B803DCDF24E5569500192396 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DCDE24E5569500192396 /* ToDoListViewController.swift */; };
 		B803DCE224E5569500192396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B803DCE024E5569500192396 /* Main.storyboard */; };
 		B803DCE524E5569500192396 /* PomodoroToDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B803DCE324E5569500192396 /* PomodoroToDo.xcdatamodeld */; };
 		B803DCE724E5569600192396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B803DCE624E5569600192396 /* Assets.xcassets */; };
 		B803DCEA24E5569600192396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B803DCE824E5569600192396 /* LaunchScreen.storyboard */; };
 		B803DCF524E5569600192396 /* PomodoroToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DCF424E5569600192396 /* PomodoroToDoTests.swift */; };
 		B803DD0024E5569600192396 /* PomodoroToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DCFF24E5569600192396 /* PomodoroToDoUITests.swift */; };
+		B803DD0E24E55DEE00192396 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B803DD0D24E55DEE00192396 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		B803DCD724E5569500192396 /* PomodoroToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomodoroToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B803DCDA24E5569500192396 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B803DCDC24E5569500192396 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B803DCDE24E5569500192396 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B803DCDE24E5569500192396 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		B803DCE124E5569500192396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B803DCE424E5569500192396 /* PomodoroToDo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PomodoroToDo.xcdatamodel; sourceTree = "<group>"; };
 		B803DCE624E5569600192396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		B803DCFB24E5569600192396 /* PomodoroToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B803DCFF24E5569600192396 /* PomodoroToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroToDoUITests.swift; sourceTree = "<group>"; };
 		B803DD0124E5569600192396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B803DD0D24E55DEE00192396 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,13 @@
 			children = (
 				B803DCDA24E5569500192396 /* AppDelegate.swift */,
 				B803DCDC24E5569500192396 /* SceneDelegate.swift */,
-				B803DCDE24E5569500192396 /* ViewController.swift */,
+				B803DCDE24E5569500192396 /* ToDoListViewController.swift */,
 				B803DCE024E5569500192396 /* Main.storyboard */,
 				B803DCE624E5569600192396 /* Assets.xcassets */,
 				B803DCE824E5569600192396 /* LaunchScreen.storyboard */,
 				B803DCEB24E5569600192396 /* Info.plist */,
 				B803DCE324E5569500192396 /* PomodoroToDo.xcdatamodeld */,
+				B803DD0D24E55DEE00192396 /* Constants.swift */,
 			);
 			path = PomodoroToDo;
 			sourceTree = "<group>";
@@ -262,7 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B803DCDF24E5569500192396 /* ViewController.swift in Sources */,
+				B803DD0E24E55DEE00192396 /* Constants.swift in Sources */,
+				B803DCDF24E5569500192396 /* ToDoListViewController.swift in Sources */,
 				B803DCDB24E5569500192396 /* AppDelegate.swift in Sources */,
 				B803DCE524E5569500192396 /* PomodoroToDo.xcdatamodeld in Sources */,
 				B803DCDD24E5569500192396 /* SceneDelegate.swift in Sources */,
