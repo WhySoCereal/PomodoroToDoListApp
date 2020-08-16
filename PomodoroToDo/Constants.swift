@@ -8,4 +8,8 @@
 
 struct K {
     static let cellIdentifier = "ToDoItemCell"
+    struct Keys {
+        static let todoArray = "ToDoListArray"
+    }
+    
 }

@@ -11,9 +11,13 @@ import UIKit
 class ToDoListViewController: UITableViewController {
 
     var items = ["item1", "item2" , "item3"]
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let safeItems = defaults.array(forKey: K.Keys.todoArray) as? [String] {
+            items = safeItems
+        }
         
     }
 
@@ -54,6 +58,7 @@ class ToDoListViewController: UITableViewController {
             if let safeTextField = textField {
                 print(safeTextField.text!)
                 self.items.append(safeTextField.text!)
+                self.defaults.set(self.items, forKey: K.Keys.todoArray)
                 self.tableView.reloadData()
             }
         }
